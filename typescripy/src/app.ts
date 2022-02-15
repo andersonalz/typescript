@@ -55,5 +55,15 @@ const generatError = function (msg:string):Error  {
      return new Error(msg)
 }
 
-type uid = number | string
-let user :uid = 'ali '
+type uid = number | string 
+let username : uid =  "qwe"
+
+type user = {
+    username : string,
+    id : uid
+}
+
+let person :user = {
+    username : "ali",
+    id : 1
+} 
